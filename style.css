@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fce4ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flower {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.petal {
+  width: 60px;
+  height: 100px;
+  background: pink;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  transform-origin: bottom center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.petal1 { transform: rotate(0deg) translateY(-50px); }
+.petal2 { transform: rotate(90deg) translateY(-50px); }
+.petal3 { transform: rotate(180deg) translateY(-50px); }
+.petal4 { transform: rotate(270deg) translateY(-50px); }
+
+.center {
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
